@@ -74,7 +74,7 @@ const ChatBot = () => {
     setLoading(true);
 
     try {
-      const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+      const model = genAI.getGenerativeModel({ model: "gemini-3.5-flash" });
       const fullPrompt = `${personaPrompt}\n\nUser Question: ${input}`;
       
       const result = await model.generateContent(fullPrompt);

@@ -1,6 +1,6 @@
 import React from 'react';
 import ChatBot from './components/ChatBot';
-import { Mail, Award, Code, Briefcase, ExternalLink } from 'lucide-react';
+import { Mail, Award, Code, Briefcase, Cpu, Database, Layout, ExternalLink, Settings, Cloud, BarChart, Users, Layers } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import './App.css';
 
@@ -11,6 +11,8 @@ import storeMgmtImg from './assets/images/Storemanagement.jpg';
 import googleCertImg from './assets/images/Googlecertificate.jpg';
 import dsCertImg from './assets/images/DataScience Certification.png';
 import reactCertImg from './assets/images/Reactjs.png';
+import jicrpaperImg from './assets/images/JICR_PAPER.jpg';
+import fullstackjavaImg from './assets/images/Fullstackjava.png';
 
 function App() {
   const projects = [
@@ -26,7 +28,7 @@ function App() {
       title: "Claritty-AI Extension",
       date: "Nov 2025",
       image: clarittyImg,
-      link: "https://github.com/ChetanKumar-Meegada",
+      link: "https://chromewebstore.google.com/detail/claritty/ofdhfacioekfdpogocpaekeakbeficke",
       description: "AI-powered extension providing instant explanations and topic breakdowns directly on webpages using Gemini API, improving reading efficiency by 40%.",
       tags: ["JavaScript", "Gemini API"]
     },
@@ -34,7 +36,7 @@ function App() {
       title: "AI Prompt Optimizer",
       date: "Nov 2025",
       image: PromptOptimizerImg,
-      link: "https://github.com/ChetanKumar-Meegada",
+      link: "https://chromewebstore.google.com/detail/ai-prompt-optimizer/kdbddcnbibbijfcpphohajcglgcanjof",
       description: "Chrome extension that enhances and refines prompts across AI platforms to generate clearer, smarter, and more effective AI responses instantly.",
       tags: ["JavaScript", "Gemini API"]
     },
@@ -84,19 +86,63 @@ function App() {
       title: "Agentic Applications",
       issuer: "Google Cloud",
       image: googleCertImg,
-      link: "https://www.google.com"
+      link: "https://drive.google.com/file/d/1rNe1nlEYQ4qwlEXkbChPFerL1lexvEBb/view?usp=sharing"
     },
     {
       title: "Computational Data Science",
       issuer: "Case Western Reserve",
       image: dsCertImg,
-      link: "https://www.upgrad.com"
+      link: "https://drive.google.com/file/d/1B66eSVKkh08cqmtt2TPIOt5_Nj-6gN4_/view?usp=sharing"
     },
     {
       title: "ReactJS for Beginners",
       issuer: "Simplilearn",
       image: reactCertImg,
-      link: "https://www.simplilearn.com"
+      link: "https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxNzI1IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfNTA1NDgxMF8xNzEzMzU1OTM3LnBuZyIsInVzZXJuYW1lIjoiQ2hldGhhbkt1bWFyTWVlZ2FkYSJ9&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F4215%2FReactJS-for-Beginners%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1586228242002445925&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVL6pw9fRKdcsO8UyyrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDAHv%2BjaZBAAAA"
+    },
+    {
+      title: "Full Stack Java Development",
+      issuer: "Simplilearn",
+      image: fullstackjavaImg,
+      link: "https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxNzI1IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfNTA1NDgxMF8xNzEzMzU1OTM3LnBuZyIsInVzZXJuYW1lIjoiQ2hldGhhbkt1bWFyTWVlZ2FkYSJ9&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F4215%2FReactJS-for-Beginners%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1586228242002445925&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVL6pw9fRKdcsO8UyyrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDAHv%2BjaZBAAAA"
+    },
+    {
+      title: "ANALYSIS AND PREDICTION OF CHURN CUSTOMERS USING MACHINE LEARNING",
+      issuer: "Journal of Interdisciplinary Cycle Research",
+      image: jicrpaperImg,
+      link: "https://drive.google.com/file/d/10WhDfjpQlbRJlcwekIizoYT0xVkB48Cv/view?usp=sharing"
+    }
+  ];
+  const skillCategories = [
+    {
+      title: "Programming Languages",
+      icon: <Code size={22} />,
+      skills: ["Python", "Java", "JavaScript", "TypeScript", "SQL (PostgreSQL, MySQL)", "Golang", "C/C++"]
+    },
+    {
+      title: "AI & Machine Learning",
+      icon: <Cpu size={22} />,
+      skills: ["Machine Learning", "NLP", "RAG", "Generative AI", "LLMs", "Prompt Engineering", "TensorFlow", "PyTorch", "scikit-learn", "Predictive Modeling"]
+    },
+    {
+      title: "Cloud & DevOps",
+      icon: <Cloud size={22} />,
+      skills: ["AWS", "CI/CD", "Jenkins", "Git", "GitHub", "Docker", "Cloud Deployment", "Serverless Architecture"]
+    },
+    {
+      title: "Software Engineering",
+      icon: <Layers size={22} />,
+      skills: ["Full Stack Development", "Frontend & Backend", "REST APIs", "OOP", "SDLC", "Debugging", "Unit Testing", "API Architecture"]
+    },
+    {
+      title: "Data & Visualization",
+      icon: <BarChart size={22} />,
+      skills: ["PostgreSQL", "MySQL", "MongoDB", "Pandas", "NumPy", "Tableau", "Power BI", "Matplotlib", "Seaborn", "ETL Pipelines"]
+    },
+    {
+      title: "Management & Workflow",
+      icon: <Users size={22} />,
+      skills: ["Agile/Scrum", "Jira", "Sprint Planning", "Technical Documentation", "Cross-Functional Collaboration"]
     }
   ];
 
@@ -106,6 +152,7 @@ function App() {
         <div className="container">
           <h1 className="logo">Chethan Kumar Meegada<span>.</span></h1>
           <nav>
+            <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#certifications">Certifications</a>
@@ -174,9 +221,30 @@ function App() {
         </div>
       </section>
 
+      <section id="skills" className="section bg-light">
+        <div className="container">
+          <h3 className="section-title"><Layout size={28} /> Technical Skills</h3>
+          <div className="skills-grid">
+            {skillCategories.map((cat, index) => (
+              <div key={index} className="skill-category-card">
+                <div className="skill-cat-header">
+                  {cat.icon}
+                  <h4>{cat.title}</h4>
+                </div>
+                <div className="skill-pills">
+                  {cat.skills.map((skill, i) => (
+                    <span key={i} className="skill-pill">{skill}</span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="certifications" className="section bg-light">
         <div className="container">
-          <h3 className="section-title"><Award size={28} /> Certifications</h3>
+          <h3 className="section-title"><Award size={28} /> Certifications & Publications</h3>
           <div className="grid grid-3">
             {certifications.map((cert, index) => (
               <a href={cert.link} target="_blank" rel="noreferrer" key={index} className="cert-card">
