@@ -1,6 +1,6 @@
 import React from 'react';
 import ChatBot from './components/ChatBot';
-import { Mail, Award, Code, Briefcase, Cpu, Database, Layout, ExternalLink, Settings, Cloud, BarChart, Users, Layers } from 'lucide-react';
+import { Mail, Award, Code, Briefcase, Cpu, Layout, ExternalLink, Cloud, BarChart, Users, Layers } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import './App.css';
 
